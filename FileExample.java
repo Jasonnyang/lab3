@@ -50,6 +50,14 @@ public class FileExample {
 	  }
 	  return result;
 	}
+  public static void main(String[]args)throws IOException{
+    File f = new File("./some-files/");
+    List<File> fi = getFiles(f);
+    for(File a:fi){
+      System.out.println(a);
+    }
+
+  }
 }
 
 
